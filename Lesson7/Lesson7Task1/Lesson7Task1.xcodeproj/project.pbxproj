@@ -13,6 +13,12 @@
 		334E7FF323C8A45B00FD12D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334E7FF223C8A45B00FD12D8 /* Assets.xcassets */; };
 		334E7FF623C8A45B00FD12D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334E7FF423C8A45B00FD12D8 /* LaunchScreen.storyboard */; };
 		334E7FFF23C8A51F00FD12D8 /* FirstTabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E7FFE23C8A51F00FD12D8 /* FirstTabMainViewController.swift */; };
+		339B06BA23CB2E1A003170E3 /* SecondTabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06B923CB2E1A003170E3 /* SecondTabMainViewController.swift */; };
+		339B06BD23CB2EC3003170E3 /* SecondTabTypeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06BC23CB2EC3003170E3 /* SecondTabTypeScreen.swift */; };
+		339B06BF23CB300D003170E3 /* SecondTabChangeTypeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06BE23CB300D003170E3 /* SecondTabChangeTypeScreenViewController.swift */; };
+		339B06C223CB389D003170E3 /* ThirdTabParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06C123CB389D003170E3 /* ThirdTabParentViewController.swift */; };
+		339B06C423CB38B0003170E3 /* ThirdTabChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06C323CB38B0003170E3 /* ThirdTabChildViewController.swift */; };
+		339B06C723CB3CF4003170E3 /* ThirdTabColorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B06C623CB3CF4003170E3 /* ThirdTabColorScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		334E7FF523C8A45B00FD12D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		334E7FF723C8A45B00FD12D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334E7FFE23C8A51F00FD12D8 /* FirstTabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabMainViewController.swift; sourceTree = "<group>"; };
+		339B06B923CB2E1A003170E3 /* SecondTabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabMainViewController.swift; sourceTree = "<group>"; };
+		339B06BC23CB2EC3003170E3 /* SecondTabTypeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabTypeScreen.swift; sourceTree = "<group>"; };
+		339B06BE23CB300D003170E3 /* SecondTabChangeTypeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabChangeTypeScreenViewController.swift; sourceTree = "<group>"; };
+		339B06C123CB389D003170E3 /* ThirdTabParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabParentViewController.swift; sourceTree = "<group>"; };
+		339B06C323CB38B0003170E3 /* ThirdTabChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabChildViewController.swift; sourceTree = "<group>"; };
+		339B06C623CB3CF4003170E3 /* ThirdTabColorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabColorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		334E7FE823C8A45300FD12D8 /* Lesson7Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				339B06C023CB3852003170E3 /* ThirdTab */,
+				339B06B823CB2DF3003170E3 /* SecondTab */,
 				334E7FFD23C8A4D400FD12D8 /* FirstTab */,
 				334E7FE923C8A45300FD12D8 /* AppDelegate.swift */,
 				334E7FEB23C8A45300FD12D8 /* SceneDelegate.swift */,
@@ -73,6 +87,42 @@
 				334E7FFE23C8A51F00FD12D8 /* FirstTabMainViewController.swift */,
 			);
 			path = FirstTab;
+			sourceTree = "<group>";
+		};
+		339B06B823CB2DF3003170E3 /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				339B06BB23CB2E96003170E3 /* Support */,
+				339B06B923CB2E1A003170E3 /* SecondTabMainViewController.swift */,
+				339B06BE23CB300D003170E3 /* SecondTabChangeTypeScreenViewController.swift */,
+			);
+			path = SecondTab;
+			sourceTree = "<group>";
+		};
+		339B06BB23CB2E96003170E3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				339B06BC23CB2EC3003170E3 /* SecondTabTypeScreen.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		339B06C023CB3852003170E3 /* ThirdTab */ = {
+			isa = PBXGroup;
+			children = (
+				339B06C523CB3CD7003170E3 /* Support */,
+				339B06C123CB389D003170E3 /* ThirdTabParentViewController.swift */,
+				339B06C323CB38B0003170E3 /* ThirdTabChildViewController.swift */,
+			);
+			path = ThirdTab;
+			sourceTree = "<group>";
+		};
+		339B06C523CB3CD7003170E3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				339B06C623CB3CF4003170E3 /* ThirdTabColorScreen.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				334E7FEA23C8A45300FD12D8 /* AppDelegate.swift in Sources */,
+				339B06C223CB389D003170E3 /* ThirdTabParentViewController.swift in Sources */,
+				339B06BA23CB2E1A003170E3 /* SecondTabMainViewController.swift in Sources */,
+				339B06C423CB38B0003170E3 /* ThirdTabChildViewController.swift in Sources */,
+				339B06BF23CB300D003170E3 /* SecondTabChangeTypeScreenViewController.swift in Sources */,
+				339B06BD23CB2EC3003170E3 /* SecondTabTypeScreen.swift in Sources */,
+				339B06C723CB3CF4003170E3 /* ThirdTabColorScreen.swift in Sources */,
 				334E7FEC23C8A45300FD12D8 /* SceneDelegate.swift in Sources */,
 				334E7FFF23C8A51F00FD12D8 /* FirstTabMainViewController.swift in Sources */,
 			);
