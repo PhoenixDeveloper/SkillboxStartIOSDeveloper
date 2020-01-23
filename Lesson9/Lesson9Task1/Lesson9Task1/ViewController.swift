@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         case 0:
             setChildViewController(controller: storyboard!.instantiateViewController(identifier: "FirstTaskMainViewController"))
         case 1:
-            fatalError("Not develop")
+            setChildViewController(controller: storyboard!.instantiateViewController(identifier: "SecondTaskMainViewController"))
         case 2:
             fatalError("Not develop")
         default:

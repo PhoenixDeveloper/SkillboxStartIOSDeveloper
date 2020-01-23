@@ -14,6 +14,7 @@
 		33A8A02723DA2BAF00AA5C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A8A02623DA2BAF00AA5C44 /* Assets.xcassets */; };
 		33A8A02A23DA2BAF00AA5C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A8A02823DA2BAF00AA5C44 /* LaunchScreen.storyboard */; };
 		33A8A03323DA2DCB00AA5C44 /* FirstTaskMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8A03223DA2DCB00AA5C44 /* FirstTaskMainViewController.swift */; };
+		33A8A03623DA417500AA5C44 /* SecondTaskMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8A03523DA417500AA5C44 /* SecondTaskMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		33A8A02923DA2BAF00AA5C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A8A02B23DA2BAF00AA5C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A8A03223DA2DCB00AA5C44 /* FirstTaskMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTaskMainViewController.swift; sourceTree = "<group>"; };
+		33A8A03523DA417500AA5C44 /* SecondTaskMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTaskMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		33A8A01C23DA2BA700AA5C44 /* Lesson9Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				33A8A03423DA415700AA5C44 /* SecondTask */,
 				33A8A03123DA2D9D00AA5C44 /* FirstTask */,
 				33A8A01D23DA2BA700AA5C44 /* AppDelegate.swift */,
 				33A8A01F23DA2BA700AA5C44 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				33A8A03223DA2DCB00AA5C44 /* FirstTaskMainViewController.swift */,
 			);
 			path = FirstTask;
+			sourceTree = "<group>";
+		};
+		33A8A03423DA415700AA5C44 /* SecondTask */ = {
+			isa = PBXGroup;
+			children = (
+				33A8A03523DA417500AA5C44 /* SecondTaskMainViewController.swift */,
+			);
+			path = SecondTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				33A8A02223DA2BA700AA5C44 /* ViewController.swift in Sources */,
 				33A8A03323DA2DCB00AA5C44 /* FirstTaskMainViewController.swift in Sources */,
+				33A8A03623DA417500AA5C44 /* SecondTaskMainViewController.swift in Sources */,
 				33A8A01E23DA2BA700AA5C44 /* AppDelegate.swift in Sources */,
 				33A8A02023DA2BA700AA5C44 /* SceneDelegate.swift in Sources */,
 			);

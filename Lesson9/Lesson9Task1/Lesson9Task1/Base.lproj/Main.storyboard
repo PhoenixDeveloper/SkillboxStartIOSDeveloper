@@ -7,6 +7,82 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Second Task Main View Controller-->
+        <scene sceneID="GBA-TL-Otx">
+            <objects>
+                <viewController storyboardIdentifier="SecondTaskMainViewController" id="gaY-rM-OjZ" customClass="SecondTaskMainViewController" customModule="Lesson9Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gnb-VZ-gd5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите текст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBO-HL-hUL">
+                                <rect key="frame" x="8" y="16" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите текст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsd-iA-1qf">
+                                <rect key="frame" x="292" y="16" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="kOj-Vl-MMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vey-2A-HBd">
+                                <rect key="frame" x="16" y="351" width="150" height="34"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="LnH-sZ-Dey"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldOneChange:" destination="gaY-rM-OjZ" eventType="editingChanged" id="lzZ-kw-VIg"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5u-Xi-dUg">
+                                <rect key="frame" x="248" y="351" width="150" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="gkE-ys-3Sb"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldTwoChange:" destination="gaY-rM-OjZ" eventType="editingChanged" id="Ibb-q7-AbX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OOV-Dd-rbE" firstAttribute="trailing" secondItem="Qsd-iA-1qf" secondAttribute="trailing" constant="8" id="07J-in-uiK"/>
+                            <constraint firstItem="d5u-Xi-dUg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vey-2A-HBd" secondAttribute="trailing" constant="8" id="1hP-kK-v3R"/>
+                            <constraint firstItem="vey-2A-HBd" firstAttribute="centerY" secondItem="Gnb-VZ-gd5" secondAttribute="centerY" id="6C1-1F-OvX"/>
+                            <constraint firstItem="SBO-HL-hUL" firstAttribute="leading" secondItem="OOV-Dd-rbE" secondAttribute="leading" constant="8" id="Evz-UJ-vWC"/>
+                            <constraint firstItem="vey-2A-HBd" firstAttribute="leading" secondItem="OOV-Dd-rbE" secondAttribute="leading" constant="16" id="Kr7-mA-8SJ"/>
+                            <constraint firstItem="Qsd-iA-1qf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SBO-HL-hUL" secondAttribute="trailing" constant="8" id="QEo-1l-yh1"/>
+                            <constraint firstItem="SBO-HL-hUL" firstAttribute="top" secondItem="OOV-Dd-rbE" secondAttribute="top" constant="16" id="UrM-RE-eUM"/>
+                            <constraint firstItem="Qsd-iA-1qf" firstAttribute="firstBaseline" secondItem="SBO-HL-hUL" secondAttribute="firstBaseline" id="VI3-R4-kXK"/>
+                            <constraint firstItem="d5u-Xi-dUg" firstAttribute="centerY" secondItem="Gnb-VZ-gd5" secondAttribute="centerY" id="mGU-ZT-9JA"/>
+                            <constraint firstItem="OOV-Dd-rbE" firstAttribute="trailing" secondItem="d5u-Xi-dUg" secondAttribute="trailing" constant="16" id="qn8-KI-uKz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OOV-Dd-rbE"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelOne" destination="SBO-HL-hUL" id="w75-Uk-4PH"/>
+                        <outlet property="labelTwo" destination="Qsd-iA-1qf" id="u36-Nb-NFM"/>
+                        <outlet property="textFieldOne" destination="vey-2A-HBd" id="XRN-T3-3Jf"/>
+                        <outlet property="textFieldTwo" destination="d5u-Xi-dUg" id="5nu-WD-PoE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8e-yi-oKS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1555" y="722"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
