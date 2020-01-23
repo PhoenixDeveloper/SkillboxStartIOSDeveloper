@@ -122,6 +122,50 @@
             </objects>
             <point key="canvasLocation" x="139" y="119"/>
         </scene>
+        <!--Third Task Main View Controller-->
+        <scene sceneID="p7K-F7-s78">
+            <objects>
+                <viewController storyboardIdentifier="ThirdTaskMainViewController" id="BQP-E2-77I" customClass="ThirdTaskMainViewController" customModule="Lesson9Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Q1-G8-eOs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEg-HV-Wj9">
+                                <rect key="frame" x="16" y="15.999999999999986" width="382" height="243.66666666666663"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat lacus non nibh faucibus euismod. Quisque pharetra libero enim, eget dignissim magna eleifend vitae. Fusce sem est, aliquet in euismod rutrum, dignissim id diam. Quisque scelerisque dapibus turpis, eu tristique ipsum accumsan ut. Vestibulum nunc nisi, ullamcorper at eros eget, bibendum hendrerit lacus. Aenean sed rhoncus lorem, eget sagittis ex. Vestibulum eleifend tristique libero vulputate porta. Vivamus blandit leo sapien, vitae bibendum nulla congue id.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55P-lK-tdZ">
+                                <rect key="frame" x="16" y="275.66666666666669" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Свернуть Label"/>
+                                <connections>
+                                    <action selector="changeLabelNumberOfLines:" destination="BQP-E2-77I" eventType="touchUpInside" id="1V3-Ls-3tz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I9V-3F-Xcx" firstAttribute="trailing" secondItem="yEg-HV-Wj9" secondAttribute="trailing" constant="16" id="1cF-cb-Pce"/>
+                            <constraint firstItem="I9V-3F-Xcx" firstAttribute="trailing" secondItem="55P-lK-tdZ" secondAttribute="trailing" constant="16" id="aKS-RJ-Y1R"/>
+                            <constraint firstItem="yEg-HV-Wj9" firstAttribute="leading" secondItem="I9V-3F-Xcx" secondAttribute="leading" constant="16" id="hHF-ur-sdq"/>
+                            <constraint firstItem="yEg-HV-Wj9" firstAttribute="top" secondItem="I9V-3F-Xcx" secondAttribute="top" constant="16" id="oj8-V1-mAq"/>
+                            <constraint firstItem="55P-lK-tdZ" firstAttribute="leading" secondItem="I9V-3F-Xcx" secondAttribute="leading" constant="16" id="wWD-wW-0vU"/>
+                            <constraint firstItem="55P-lK-tdZ" firstAttribute="top" secondItem="yEg-HV-Wj9" secondAttribute="bottom" constant="16" id="yI9-m2-OFG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I9V-3F-Xcx"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="55P-lK-tdZ" id="SnY-Ik-SGn"/>
+                        <outlet property="label" destination="yEg-HV-Wj9" id="RWc-X1-rgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdv-uC-T6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="301"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="gQj-ca-2VY">
             <objects>
