@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         case 1:
             setChildViewController(controller: storyboard!.instantiateViewController(identifier: "TableViewViewController"))
         case 2:
-            fatalError("Not develop")
+            setChildViewController(controller: storyboard!.instantiateViewController(identifier: "ScrollViewViewController"))
         default:
             fatalError("imposible")
         }
