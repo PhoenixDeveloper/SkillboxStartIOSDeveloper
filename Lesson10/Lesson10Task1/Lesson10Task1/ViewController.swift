@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         case 0:
             setChildViewController(controller: storyboard!.instantiateViewController(identifier: "CollectionViewViewController"))
         case 1:
-            fatalError("Not develop")
+            setChildViewController(controller: storyboard!.instantiateViewController(identifier: "TableViewViewController"))
         case 2:
             fatalError("Not develop")
         default:
