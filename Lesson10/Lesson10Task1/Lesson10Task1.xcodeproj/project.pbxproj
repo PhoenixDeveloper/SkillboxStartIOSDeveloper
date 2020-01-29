@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331D9D1523E191AF0006BB10 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331D9D1423E191AF0006BB10 /* UIView+Extension.swift */; };
 		333CA50923DADEB900A34EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA50823DADEB900A34EAC /* AppDelegate.swift */; };
 		333CA50B23DADEB900A34EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA50A23DADEB900A34EAC /* SceneDelegate.swift */; };
 		333CA50D23DADEB900A34EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA50C23DADEB900A34EAC /* ViewController.swift */; };
@@ -19,12 +20,12 @@
 		333CA52523DB138800A34EAC /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA52423DB138800A34EAC /* TableViewViewController.swift */; };
 		333CA52723DB13CB00A34EAC /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA52623DB13CB00A34EAC /* MenuTableViewCell.swift */; };
 		333CA52923DB17E900A34EAC /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA52823DB17E900A34EAC /* MenuItemModel.swift */; };
-		333CA52B23DB287C00A34EAC /* ScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA52A23DB287C00A34EAC /* ScrollViewViewController.swift */; };
 		61FF38F1C43820C2F36A354C /* Pods_Lesson10Task1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8985367A41AC3CAF88BD4 /* Pods_Lesson10Task1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		327130BED23121DDD75688DF /* Pods-Lesson10Task1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson10Task1.debug.xcconfig"; path = "Target Support Files/Pods-Lesson10Task1/Pods-Lesson10Task1.debug.xcconfig"; sourceTree = "<group>"; };
+		331D9D1423E191AF0006BB10 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		333CA50523DADEB900A34EAC /* Lesson10Task1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10Task1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		333CA50823DADEB900A34EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333CA50A23DADEB900A34EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		333CA52423DB138800A34EAC /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		333CA52623DB13CB00A34EAC /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		333CA52823DB17E900A34EAC /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
-		333CA52A23DB287C00A34EAC /* ScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewViewController.swift; sourceTree = "<group>"; };
 		6C91D9C6A09377221DE1EA47 /* Pods-Lesson10Task1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson10Task1.release.xcconfig"; path = "Target Support Files/Pods-Lesson10Task1/Pods-Lesson10Task1.release.xcconfig"; sourceTree = "<group>"; };
 		BBE8985367A41AC3CAF88BD4 /* Pods_Lesson10Task1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson10Task1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,7 +88,7 @@
 				333CA51623DADEC000A34EAC /* Info.plist */,
 				333CA51F23DAE53B00A34EAC /* CollectionViewViewController.swift */,
 				333CA52423DB138800A34EAC /* TableViewViewController.swift */,
-				333CA52A23DB287C00A34EAC /* ScrollViewViewController.swift */,
+				331D9D1423E191AF0006BB10 /* UIView+Extension.swift */,
 			);
 			path = Lesson10Task1;
 			sourceTree = "<group>";
@@ -117,7 +117,6 @@
 				327130BED23121DDD75688DF /* Pods-Lesson10Task1.debug.xcconfig */,
 				6C91D9C6A09377221DE1EA47 /* Pods-Lesson10Task1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -252,7 +251,7 @@
 				333CA52023DAE53B00A34EAC /* CollectionViewViewController.swift in Sources */,
 				333CA50923DADEB900A34EAC /* AppDelegate.swift in Sources */,
 				333CA50B23DADEB900A34EAC /* SceneDelegate.swift in Sources */,
-				333CA52B23DB287C00A34EAC /* ScrollViewViewController.swift in Sources */,
+				331D9D1523E191AF0006BB10 /* UIView+Extension.swift in Sources */,
 				333CA52523DB138800A34EAC /* TableViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
