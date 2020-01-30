@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33ACCD9E23E2C995006D9067 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACCD9D23E2C995006D9067 /* CustomSegmentControl.swift */; };
 		33D550D823E1A98900C3B724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D550D723E1A98900C3B724 /* AppDelegate.swift */; };
-		33D550DA23E1A98900C3B724 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D550D923E1A98900C3B724 /* SceneDelegate.swift */; };
 		33D550DC23E1A98900C3B724 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D550DB23E1A98900C3B724 /* ViewController.swift */; };
 		33D550DF23E1A98900C3B724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D550DD23E1A98900C3B724 /* Main.storyboard */; };
 		33D550E123E1A99000C3B724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D550E023E1A99000C3B724 /* Assets.xcassets */; };
 		33D550E423E1A99000C3B724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D550E223E1A99000C3B724 /* LaunchScreen.storyboard */; };
 		33D550ED23E1A9C500C3B724 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D550EC23E1A9C500C3B724 /* CustomButton.swift */; };
+		33D550F023E1AD6D00C3B724 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D550EF23E1AD6D00C3B724 /* ClockView.swift */; };
+		33D550F223E1AD8400C3B724 /* ClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D550F123E1AD8400C3B724 /* ClockView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33ACCD9D23E2C995006D9067 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 		33D550D423E1A98900C3B724 /* Lesson11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D550D723E1A98900C3B724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33D550D923E1A98900C3B724 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		33D550DB23E1A98900C3B724 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33D550DE23E1A98900C3B724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33D550E023E1A99000C3B724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D550E323E1A99000C3B724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33D550E523E1A99000C3B724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D550EC23E1A9C500C3B724 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		33D550EF23E1AD6D00C3B724 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		33D550F123E1AD8400C3B724 /* ClockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,6 @@
 			children = (
 				33D550EB23E1A9A000C3B724 /* CustomView */,
 				33D550D723E1A98900C3B724 /* AppDelegate.swift */,
-				33D550D923E1A98900C3B724 /* SceneDelegate.swift */,
 				33D550DB23E1A98900C3B724 /* ViewController.swift */,
 				33D550DD23E1A98900C3B724 /* Main.storyboard */,
 				33D550E023E1A99000C3B724 /* Assets.xcassets */,
@@ -73,9 +76,20 @@
 		33D550EB23E1A9A000C3B724 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				33D550EE23E1AD5200C3B724 /* ClockView */,
 				33D550EC23E1A9C500C3B724 /* CustomButton.swift */,
+				33ACCD9D23E2C995006D9067 /* CustomSegmentControl.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		33D550EE23E1AD5200C3B724 /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				33D550EF23E1AD6D00C3B724 /* ClockView.swift */,
+				33D550F123E1AD8400C3B724 /* ClockView.xib */,
+			);
+			path = ClockView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D550E423E1A99000C3B724 /* LaunchScreen.storyboard in Resources */,
+				33D550F223E1AD8400C3B724 /* ClockView.xib in Resources */,
 				33D550E123E1A99000C3B724 /* Assets.xcassets in Resources */,
 				33D550DF23E1A98900C3B724 /* Main.storyboard in Resources */,
 			);
@@ -150,9 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D550ED23E1A9C500C3B724 /* CustomButton.swift in Sources */,
+				33D550F023E1AD6D00C3B724 /* ClockView.swift in Sources */,
 				33D550DC23E1A98900C3B724 /* ViewController.swift in Sources */,
 				33D550D823E1A98900C3B724 /* AppDelegate.swift in Sources */,
-				33D550DA23E1A98900C3B724 /* SceneDelegate.swift in Sources */,
+				33ACCD9E23E2C995006D9067 /* CustomSegmentControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lesson11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lesson11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
