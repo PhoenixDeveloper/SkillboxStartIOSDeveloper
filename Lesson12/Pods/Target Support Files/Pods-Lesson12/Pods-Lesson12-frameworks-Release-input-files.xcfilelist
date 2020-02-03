@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Lesson12/Pods-Lesson12-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DTModelStorage/DTModelStorage.framework
+${BUILT_PRODUCTS_DIR}/DTTableViewManager/DTTableViewManager.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
