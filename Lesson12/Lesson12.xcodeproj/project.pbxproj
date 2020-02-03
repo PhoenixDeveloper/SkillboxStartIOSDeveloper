@@ -18,6 +18,8 @@
 		3396C6C123E4720B00DF9AD8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3396C6C023E4720B00DF9AD8 /* Alamofire.framework */; };
 		3396C6C223E4720B00DF9AD8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3396C6C023E4720B00DF9AD8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33A7740523E8150F00EB4880 /* WeatherDefaultLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740423E8150F00EB4880 /* WeatherDefaultLoader.swift */; };
+		33A7740923E82DC500EB4880 /* WeatherAlamofireLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740823E82DC500EB4880 /* WeatherAlamofireLoader.swift */; };
+		33A7740B23E82E7500EB4880 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,8 @@
 		3396C6B923E470A900DF9AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3396C6C023E4720B00DF9AD8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		33A7740423E8150F00EB4880 /* WeatherDefaultLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDefaultLoader.swift; sourceTree = "<group>"; };
+		33A7740823E82DC500EB4880 /* WeatherAlamofireLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlamofireLoader.swift; sourceTree = "<group>"; };
+		33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		91C68B5163A7CA7C1287699C /* Pods_Lesson12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7523B53070EB53FD063DD0 /* Pods-Lesson12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson12.debug.xcconfig"; path = "Target Support Files/Pods-Lesson12/Pods-Lesson12.debug.xcconfig"; sourceTree = "<group>"; };
 		C1392FDE9539F4D5F49419A4 /* Pods-Lesson12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson12.release.xcconfig"; path = "Target Support Files/Pods-Lesson12/Pods-Lesson12.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				3396C6B923E470A900DF9AD8 /* Info.plist */,
 				3368995D23E4748C0082F091 /* DefaultViewController.swift */,
 				3368995F23E475FD0082F091 /* WeatherTableViewCell.swift */,
+				33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */,
 			);
 			path = Lesson12;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				33A7740423E8150F00EB4880 /* WeatherDefaultLoader.swift */,
+				33A7740823E82DC500EB4880 /* WeatherAlamofireLoader.swift */,
 			);
 			path = Loaders;
 			sourceTree = "<group>";
@@ -240,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A7740923E82DC500EB4880 /* WeatherAlamofireLoader.swift in Sources */,
 				33A7740523E8150F00EB4880 /* WeatherDefaultLoader.swift in Sources */,
+				33A7740B23E82E7500EB4880 /* AlamofireViewController.swift in Sources */,
 				3368996023E475FD0082F091 /* WeatherTableViewCell.swift in Sources */,
 				3368995E23E4748C0082F091 /* DefaultViewController.swift in Sources */,
 				3396C6AC23E470A400DF9AD8 /* AppDelegate.swift in Sources */,

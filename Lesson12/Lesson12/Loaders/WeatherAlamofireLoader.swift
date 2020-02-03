@@ -1,5 +1,5 @@
 //
-//  WeatherDefaultLoader.swift
+//  WeatherAlamofireLoader.swift
 //  Lesson12
 //
 //  Created by Михаил Беленко on 03.02.2020.
@@ -7,17 +7,15 @@
 //
 
 import Foundation
+import Alamofire
 
-class WeatherDefaultLoader {
+class WeatherAlamofireLoader {
 
     func loadWeather(completion: @escaping (String, [WeatherTableViewCellModel]) -> Void) {
-        let url = URL(string: "http://api.openweathermap.org/data/2.5/forecast?id=581049&appid=4cf8b5521e6a43563500b176a76d90c1")! // для Москвы нужно поменять id на 524901
-        let request = URLRequest(url: url)
-
-        let task = URLSession.shared.dataTask(with: request) { data, responce, error in
-            if let data = data,
-                let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-                let jsonDict = json as? NSDictionary {
+        // для Москвы нужно поменять id на 524901
+        AF.request("http://api.openweathermap.org/data/2.5/forecast?id=581049&appid=4cf8b5521e6a43563500b176a76d90c1").responseJSON  { responce in
+            if let objects = try? responce.result.get(),
+                let jsonDict = objects as? NSDictionary {
                 var weather: [WeatherTableViewCellModel] = []
                 var cityName: String = ""
 
@@ -39,6 +37,5 @@ class WeatherDefaultLoader {
                 }
             }
         }
-        task.resume()
     }
 }
