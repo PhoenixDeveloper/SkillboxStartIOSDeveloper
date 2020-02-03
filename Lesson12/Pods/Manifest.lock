@@ -1,0 +1,26 @@
+PODS:
+  - DTModelStorage (8.0.0):
+    - DTModelStorage/Core (= 8.0.0)
+  - DTModelStorage/Core (8.0.0)
+  - DTTableViewManager (7.0.0):
+    - DTModelStorage (~> 8.0.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - DTTableViewManager
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - DTModelStorage
+    - DTTableViewManager
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DTModelStorage: 3b86a1e37496532bbd74cadc5b9310238d5ba780
+  DTTableViewManager: 0ada743292338c2e7b5494f41544afc9d3055fbb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 15554f5265c6da081e8095229ca4d102df061a46
+
+COCOAPODS: 1.8.4
