@@ -20,6 +20,7 @@
 		33A7740523E8150F00EB4880 /* WeatherDefaultLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740423E8150F00EB4880 /* WeatherDefaultLoader.swift */; };
 		33A7740923E82DC500EB4880 /* WeatherAlamofireLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740823E82DC500EB4880 /* WeatherAlamofireLoader.swift */; };
 		33A7740B23E82E7500EB4880 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */; };
+		33BDFEA023E99156003AE604 /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDFE9F23E99156003AE604 /* RealmPersistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		33A7740423E8150F00EB4880 /* WeatherDefaultLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDefaultLoader.swift; sourceTree = "<group>"; };
 		33A7740823E82DC500EB4880 /* WeatherAlamofireLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlamofireLoader.swift; sourceTree = "<group>"; };
 		33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		33BDFE9F23E99156003AE604 /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistence.swift; sourceTree = "<group>"; };
 		91C68B5163A7CA7C1287699C /* Pods_Lesson12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7523B53070EB53FD063DD0 /* Pods-Lesson12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson12.debug.xcconfig"; path = "Target Support Files/Pods-Lesson12/Pods-Lesson12.debug.xcconfig"; sourceTree = "<group>"; };
 		C1392FDE9539F4D5F49419A4 /* Pods-Lesson12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson12.release.xcconfig"; path = "Target Support Files/Pods-Lesson12/Pods-Lesson12.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				3368995D23E4748C0082F091 /* DefaultViewController.swift */,
 				3368995F23E475FD0082F091 /* WeatherTableViewCell.swift */,
 				33A7740A23E82E7500EB4880 /* AlamofireViewController.swift */,
+				33BDFE9F23E99156003AE604 /* RealmPersistence.swift */,
 			);
 			path = Lesson12;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				3368995E23E4748C0082F091 /* DefaultViewController.swift in Sources */,
 				3396C6AC23E470A400DF9AD8 /* AppDelegate.swift in Sources */,
 				3396C6AE23E470A400DF9AD8 /* SceneDelegate.swift in Sources */,
+				33BDFEA023E99156003AE604 /* RealmPersistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

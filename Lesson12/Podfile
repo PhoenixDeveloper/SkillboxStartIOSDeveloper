@@ -8,5 +8,6 @@ target 'Lesson12' do
   # Pods for Lesson12
   pod 'DTTableViewManager'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'RealmSwift'
 
 end

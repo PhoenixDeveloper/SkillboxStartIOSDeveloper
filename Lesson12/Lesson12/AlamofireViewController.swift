@@ -19,6 +19,8 @@ class AlamofireViewController: UIViewController, DTTableViewManageable {
         super.viewDidLoad()
 
         manager.register(WeatherTableViewCell.self)
+        nameCityLabel.text = "Loading..."
+        manager.memoryStorage.setItems(RealmPersistence.storage.getSaveDatabase())
 
         WeatherAlamofireLoader().loadWeather { [unowned self] nameCity, weather in
             self.nameCityLabel.text = nameCity

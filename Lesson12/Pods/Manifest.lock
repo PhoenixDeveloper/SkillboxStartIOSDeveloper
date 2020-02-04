@@ -4,23 +4,33 @@ PODS:
   - DTModelStorage/Core (8.0.0)
   - DTTableViewManager (7.0.0):
     - DTModelStorage (~> 8.0.0)
+  - Realm (4.3.1):
+    - Realm/Headers (= 4.3.1)
+  - Realm/Headers (4.3.1)
+  - RealmSwift (4.3.1):
+    - Realm (= 4.3.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - DTTableViewManager
+  - RealmSwift
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - DTModelStorage
     - DTTableViewManager
+    - Realm
+    - RealmSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   DTModelStorage: 3b86a1e37496532bbd74cadc5b9310238d5ba780
   DTTableViewManager: 0ada743292338c2e7b5494f41544afc9d3055fbb
+  Realm: 31dc40934081ef740f60feedc46d88473cbfeb40
+  RealmSwift: b5199e9a41f67b99f51acf6874a6166f5fbe93d1
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 15554f5265c6da081e8095229ca4d102df061a46
+PODFILE CHECKSUM: 449a2a07f00ced4688fc3cfec25ae2fabb124a77
 
 COCOAPODS: 1.8.4
