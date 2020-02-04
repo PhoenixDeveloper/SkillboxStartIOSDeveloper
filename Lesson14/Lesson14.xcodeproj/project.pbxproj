@@ -19,6 +19,9 @@
 		33BDD19323E949770008E7AD /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19223E949770008E7AD /* RealmPersistence.swift */; };
 		33BDD19523E9498D0008E7AD /* TaskRealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19423E9498D0008E7AD /* TaskRealmEntity.swift */; };
 		33BDD19923E94D3B0008E7AD /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19823E94D3B0008E7AD /* ToDoListTableViewCell.swift */; };
+		33BDD19B23E982AB0008E7AD /* CoreDataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19A23E982AB0008E7AD /* CoreDataPersistence.swift */; };
+		33BDD19D23E9858B0008E7AD /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19C23E9858B0008E7AD /* CoreDataViewController.swift */; };
+		33BDD19F23E98ABA0008E7AD /* CoreDataToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD19E23E98ABA0008E7AD /* CoreDataToDoListTableViewCell.swift */; };
 		D098926CE7379FCA9C42C6D5 /* Pods_Lesson14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B9703D0AF425726F8223D /* Pods_Lesson14.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		33BDD19223E949770008E7AD /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistence.swift; sourceTree = "<group>"; };
 		33BDD19423E9498D0008E7AD /* TaskRealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRealmEntity.swift; sourceTree = "<group>"; };
 		33BDD19823E94D3B0008E7AD /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewCell.swift; sourceTree = "<group>"; };
+		33BDD19A23E982AB0008E7AD /* CoreDataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistence.swift; sourceTree = "<group>"; };
+		33BDD19C23E9858B0008E7AD /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		33BDD19E23E98ABA0008E7AD /* CoreDataToDoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataToDoListTableViewCell.swift; sourceTree = "<group>"; };
 		CE7B9703D0AF425726F8223D /* Pods_Lesson14.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson14.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83BF21D34BBD393ED701504 /* Pods-Lesson14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson14.release.xcconfig"; path = "Target Support Files/Pods-Lesson14/Pods-Lesson14.release.xcconfig"; sourceTree = "<group>"; };
 		F6E1205B46E26E73C8E8E670 /* Pods-Lesson14.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson14.debug.xcconfig"; path = "Target Support Files/Pods-Lesson14/Pods-Lesson14.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +92,8 @@
 				33A83AC523E9411D00E1BF8C /* Lesson14.xcdatamodeld */,
 				33BDD18D23E948F30008E7AD /* RealmViewController.swift */,
 				33BDD19823E94D3B0008E7AD /* ToDoListTableViewCell.swift */,
+				33BDD19C23E9858B0008E7AD /* CoreDataViewController.swift */,
+				33BDD19E23E98ABA0008E7AD /* CoreDataToDoListTableViewCell.swift */,
 			);
 			path = Lesson14;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			children = (
 				33BDD19023E949260008E7AD /* Realm */,
 				33A83AD423E941B900E1BF8C /* UserDefaultsPersistence.swift */,
+				33BDD19A23E982AB0008E7AD /* CoreDataPersistence.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -250,12 +259,15 @@
 			files = (
 				33BDD18E23E948F30008E7AD /* RealmViewController.swift in Sources */,
 				33BDD19523E9498D0008E7AD /* TaskRealmEntity.swift in Sources */,
+				33BDD19F23E98ABA0008E7AD /* CoreDataToDoListTableViewCell.swift in Sources */,
 				33BDD19323E949770008E7AD /* RealmPersistence.swift in Sources */,
 				33A83AC123E9411D00E1BF8C /* ViewController.swift in Sources */,
 				33A83AD523E941B900E1BF8C /* UserDefaultsPersistence.swift in Sources */,
+				33BDD19D23E9858B0008E7AD /* CoreDataViewController.swift in Sources */,
 				33A83ABD23E9411D00E1BF8C /* AppDelegate.swift in Sources */,
 				33BDD19923E94D3B0008E7AD /* ToDoListTableViewCell.swift in Sources */,
 				33A83AC723E9411D00E1BF8C /* Lesson14.xcdatamodeld in Sources */,
+				33BDD19B23E982AB0008E7AD /* CoreDataPersistence.swift in Sources */,
 				33A83ABF23E9411D00E1BF8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
