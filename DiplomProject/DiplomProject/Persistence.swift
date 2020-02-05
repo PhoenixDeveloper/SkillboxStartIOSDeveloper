@@ -46,4 +46,10 @@ class Persistence {
     func getCategories() -> [ExpenseCategory] {
         return expensesCategory
     }
+
+    func getTransactionFromPeriod(with date: Date) -> [Transaction] {
+        return (incomes + expenses)
+            .sorted(by: { $0.date > $1.date })
+            .filter({ $0.date >= date })
+    }
 }

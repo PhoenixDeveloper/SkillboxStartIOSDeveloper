@@ -49,6 +49,8 @@ class MainScreenViewController: UIViewController, DTTableViewManageable {
     }
 
     private func setupUI() {
+        navigationItem.title = "Главный экран"
+
         addIncomeButton.layer.cornerRadius = 10
         goToExpenseIncomeChartButton.layer.cornerRadius = 10
 
@@ -70,6 +72,8 @@ class MainScreenViewController: UIViewController, DTTableViewManageable {
     }
 
     @IBAction func goToExpenseIncomeChartClick(_ sender: Any) {
+        let vc = storyboard!.instantiateViewController(withIdentifier: "ChartExpenseIncomeViewController")
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

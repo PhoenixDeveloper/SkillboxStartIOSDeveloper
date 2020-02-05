@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0ECA698405B87A0BD2FD12D9 /* Pods_DiplomProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5F7B1A9BB503CCC596D78F /* Pods_DiplomProject.framework */; };
 		330E009823EAD39600664CA2 /* MainScreenViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */; };
+		3342A96323EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */; };
+		3342A96523EAF796004D3C0C /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */; };
 		33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5D123EAB3E4003689D6 /* Persistence.swift */; };
 		33ACA5D423EAB99D003689D6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5D323EAB99D003689D6 /* Transaction.swift */; };
 		33ACA5DB23EABBBD003689D6 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5DA23EABBBD003689D6 /* Income.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenViewController+Alert.swift"; sourceTree = "<group>"; };
+		3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartExpenseIncomeViewController.swift; sourceTree = "<group>"; };
+		3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		33ACA5D123EAB3E4003689D6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		33ACA5D323EAB99D003689D6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		33ACA5DA23EABBBD003689D6 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 				330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		3342A96123EAEC43004D3C0C /* ChartExpenseIncome */ = {
+			isa = PBXGroup;
+			children = (
+				3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */,
+				3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */,
+			);
+			path = ChartExpenseIncome;
 			sourceTree = "<group>";
 		};
 		33ACA5D023EAB3BE003689D6 /* Entity */ = {
@@ -114,6 +127,7 @@
 		33AE031623EAB0E00063D96F /* DiplomProject */ = {
 			isa = PBXGroup;
 			children = (
+				3342A96123EAEC43004D3C0C /* ChartExpenseIncome */,
 				330E009623EAD36900664CA2 /* MainScreen */,
 				33ACA5E423EACBE4003689D6 /* CustomView */,
 				33ACA5D723EABAC6003689D6 /* Extensions */,
@@ -263,10 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33ACA5DD23EABC34003689D6 /* Expense.swift in Sources */,
+				3342A96323EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift in Sources */,
 				330E009823EAD39600664CA2 /* MainScreenViewController+Alert.swift in Sources */,
 				33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */,
 				33AE031823EAB0E00063D96F /* AppDelegate.swift in Sources */,
 				33ACA5E123EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift in Sources */,
+				3342A96523EAF796004D3C0C /* TransactionTableViewCell.swift in Sources */,
 				33AE031A23EAB0E00063D96F /* SceneDelegate.swift in Sources */,
 				33ACA5E623EACC08003689D6 /* DefaultButton.swift in Sources */,
 				33ACA5DB23EABBBD003689D6 /* Income.swift in Sources */,

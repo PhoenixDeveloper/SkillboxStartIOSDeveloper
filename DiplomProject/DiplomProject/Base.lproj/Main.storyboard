@@ -10,7 +10,7 @@
         <!--Main Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="DiplomProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreenViewController" id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="DiplomProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,6 +95,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Chart Expense Income View Controller-->
+        <scene sceneID="qoe-xv-udd">
+            <objects>
+                <viewController storyboardIdentifier="ChartExpenseIncomeViewController" id="74I-Ev-Yvn" customClass="ChartExpenseIncomeViewController" customModule="DiplomProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c5j-UP-VnS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LvB-Mu-AWP">
+                                <rect key="frame" x="16" y="815" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Неделя"/>
+                                    <segment title="Месяц"/>
+                                    <segment title="Квартал"/>
+                                    <segment title="Все время"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeSegmen:" destination="74I-Ev-Yvn" eventType="valueChanged" id="YRm-3Z-ygj"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HXo-lc-tqb">
+                                <rect key="frame" x="16" y="60" width="382" height="747"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="csJ-Qh-nQn" firstAttribute="trailing" secondItem="LvB-Mu-AWP" secondAttribute="trailing" constant="16" id="1q9-1m-Y4G"/>
+                            <constraint firstItem="HXo-lc-tqb" firstAttribute="leading" secondItem="csJ-Qh-nQn" secondAttribute="leading" constant="16" id="HXL-cY-YeW"/>
+                            <constraint firstItem="csJ-Qh-nQn" firstAttribute="trailing" secondItem="HXo-lc-tqb" secondAttribute="trailing" constant="16" id="UDf-kE-qlI"/>
+                            <constraint firstItem="LvB-Mu-AWP" firstAttribute="top" secondItem="HXo-lc-tqb" secondAttribute="bottom" constant="8" id="aAH-S2-EhX"/>
+                            <constraint firstItem="LvB-Mu-AWP" firstAttribute="leading" secondItem="csJ-Qh-nQn" secondAttribute="leading" constant="16" id="w1Y-Sd-tdY"/>
+                            <constraint firstItem="HXo-lc-tqb" firstAttribute="top" secondItem="csJ-Qh-nQn" secondAttribute="top" constant="16" id="zHQ-TA-NBy"/>
+                            <constraint firstItem="csJ-Qh-nQn" firstAttribute="bottom" secondItem="LvB-Mu-AWP" secondAttribute="bottom" constant="16" id="zOo-fu-33S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="csJ-Qh-nQn"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="LvB-Mu-AWP" id="iVQ-r6-SBc"/>
+                        <outlet property="tableView" destination="HXo-lc-tqb" id="ECy-WB-QI0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SZ-cI-Xbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bsB-5d-B0n">
