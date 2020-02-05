@@ -3,24 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0ECA698405B87A0BD2FD12D9 /* Pods_DiplomProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5F7B1A9BB503CCC596D78F /* Pods_DiplomProject.framework */; };
+		330E009823EAD39600664CA2 /* MainScreenViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */; };
+		33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5D123EAB3E4003689D6 /* Persistence.swift */; };
+		33ACA5D423EAB99D003689D6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5D323EAB99D003689D6 /* Transaction.swift */; };
+		33ACA5DB23EABBBD003689D6 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5DA23EABBBD003689D6 /* Income.swift */; };
+		33ACA5DD23EABC34003689D6 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5DC23EABC34003689D6 /* Expense.swift */; };
+		33ACA5DF23EABCC3003689D6 /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5DE23EABCC3003689D6 /* ExpenseCategory.swift */; };
+		33ACA5E123EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5E023EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift */; };
+		33ACA5E323EAC512003689D6 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5E223EAC512003689D6 /* MainScreenViewController.swift */; };
+		33ACA5E623EACC08003689D6 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5E523EACC08003689D6 /* DefaultButton.swift */; };
 		33AE031823EAB0E00063D96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE031723EAB0E00063D96F /* AppDelegate.swift */; };
 		33AE031A23EAB0E00063D96F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE031923EAB0E00063D96F /* SceneDelegate.swift */; };
-		33AE031C23EAB0E00063D96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE031B23EAB0E00063D96F /* ViewController.swift */; };
 		33AE031F23EAB0E00063D96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE031D23EAB0E00063D96F /* Main.storyboard */; };
 		33AE032123EAB0E90063D96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AE032023EAB0E90063D96F /* Assets.xcassets */; };
 		33AE032423EAB0E90063D96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE032223EAB0E90063D96F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenViewController+Alert.swift"; sourceTree = "<group>"; };
+		33ACA5D123EAB3E4003689D6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		33ACA5D323EAB99D003689D6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		33ACA5DA23EABBBD003689D6 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		33ACA5DC23EABC34003689D6 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		33ACA5DE23EABCC3003689D6 /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		33ACA5E023EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcensesCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		33ACA5E223EAC512003689D6 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		33ACA5E523EACC08003689D6 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		33AE031423EAB0E00063D96F /* DiplomProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AE031723EAB0E00063D96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33AE031923EAB0E00063D96F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33AE031B23EAB0E00063D96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33AE031E23EAB0E00063D96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33AE032023EAB0E90063D96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33AE032323EAB0E90063D96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +58,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330E009623EAD36900664CA2 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				33ACA5E223EAC512003689D6 /* MainScreenViewController.swift */,
+				330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		33ACA5D023EAB3BE003689D6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				33ACA5D323EAB99D003689D6 /* Transaction.swift */,
+				33ACA5DA23EABBBD003689D6 /* Income.swift */,
+				33ACA5DC23EABC34003689D6 /* Expense.swift */,
+				33ACA5DE23EABCC3003689D6 /* ExpenseCategory.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		33ACA5D723EABAC6003689D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33ACA5E423EACBE4003689D6 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				33ACA5E523EACC08003689D6 /* DefaultButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		33AE030B23EAB0E00063D96F = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +114,18 @@
 		33AE031623EAB0E00063D96F /* DiplomProject */ = {
 			isa = PBXGroup;
 			children = (
+				330E009623EAD36900664CA2 /* MainScreen */,
+				33ACA5E423EACBE4003689D6 /* CustomView */,
+				33ACA5D723EABAC6003689D6 /* Extensions */,
+				33ACA5D023EAB3BE003689D6 /* Entity */,
 				33AE031723EAB0E00063D96F /* AppDelegate.swift */,
 				33AE031923EAB0E00063D96F /* SceneDelegate.swift */,
-				33AE031B23EAB0E00063D96F /* ViewController.swift */,
 				33AE031D23EAB0E00063D96F /* Main.storyboard */,
 				33AE032023EAB0E90063D96F /* Assets.xcassets */,
 				33AE032223EAB0E90063D96F /* LaunchScreen.storyboard */,
 				33AE032523EAB0E90063D96F /* Info.plist */,
+				33ACA5D123EAB3E4003689D6 /* Persistence.swift */,
+				33ACA5E023EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift */,
 			);
 			path = DiplomProject;
 			sourceTree = "<group>";
@@ -88,7 +144,6 @@
 				A6EE0BCA1391491436C7DE5E /* Pods-DiplomProject.debug.xcconfig */,
 				DCF7EE9F1987319D5189B4E0 /* Pods-DiplomProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +262,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AE031C23EAB0E00063D96F /* ViewController.swift in Sources */,
+				33ACA5DD23EABC34003689D6 /* Expense.swift in Sources */,
+				330E009823EAD39600664CA2 /* MainScreenViewController+Alert.swift in Sources */,
+				33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */,
 				33AE031823EAB0E00063D96F /* AppDelegate.swift in Sources */,
+				33ACA5E123EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift in Sources */,
 				33AE031A23EAB0E00063D96F /* SceneDelegate.swift in Sources */,
+				33ACA5E623EACC08003689D6 /* DefaultButton.swift in Sources */,
+				33ACA5DB23EABBBD003689D6 /* Income.swift in Sources */,
+				33ACA5DF23EABCC3003689D6 /* ExpenseCategory.swift in Sources */,
+				33ACA5D423EAB99D003689D6 /* Transaction.swift in Sources */,
+				33ACA5E323EAC512003689D6 /* MainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
