@@ -33,6 +33,7 @@ class WeatherDefaultLoader {
                     cityName = city["name"] as! String
                 }
 
+                RealmPersistence.storage.replaceSaveDatabase(database: weather)
 
                 DispatchQueue.main.async {
                     completion(cityName, weather)

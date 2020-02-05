@@ -9,6 +9,7 @@
 import UIKit
 import DTModelStorage
 import SnapKit
+import RealmSwift
 
 class WeatherTableViewCell: UITableViewCell, ModelTransfer {
 
@@ -78,10 +79,10 @@ class WeatherTableViewCell: UITableViewCell, ModelTransfer {
 
 }
 
-struct WeatherTableViewCellModel {
-    let dt: String
-    let tempMin: Double
-    let tempMax: Double
+class WeatherTableViewCellModel: Object {
+    @objc dynamic var dt: String
+    @objc dynamic var tempMin: Double
+    @objc dynamic var tempMax: Double
 
     init?(data: NSDictionary) {
         guard let main = data["main"] as? NSDictionary,
@@ -95,5 +96,12 @@ struct WeatherTableViewCellModel {
         self.dt = dt
         self.tempMin = tempMin
         self.tempMax = tempMax
+    }
+
+    required init() {
+        self.dt = ""
+        self.tempMin = 0.0
+        self.tempMax = 0.0
+        super.init()
     }
 }

@@ -19,6 +19,9 @@ class DefaultViewController: UIViewController, DTTableViewManageable {
         super.viewDidLoad()
 
         manager.register(WeatherTableViewCell.self)
+        nameCityLabel.text = "Loading..."
+        manager.memoryStorage.setItems(RealmPersistence.storage.getSaveDatabase())
+        RealmPersistence.storage.clearDatabase()
 
         WeatherDefaultLoader().loadWeather { [unowned self] nameCity, weather in
             self.nameCityLabel.text = nameCity
