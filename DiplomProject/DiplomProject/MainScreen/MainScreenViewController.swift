@@ -48,6 +48,13 @@ class MainScreenViewController: UIViewController, DTTableViewManageable {
         manager.memoryStorage.setItems(Persistence.storage.getCategories())
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        balanceLabel.text = "\(Persistence.storage.getBalance()) ₽"
+        tableView.reloadData()
+    }
+
     private func setupUI() {
         navigationItem.title = "Главный экран"
 
@@ -61,6 +68,12 @@ class MainScreenViewController: UIViewController, DTTableViewManageable {
 
     private func configureCells() {
         manager.register(ExcensesCategoryTableViewCell.self)
+
+        manager.didSelect(ExcensesCategoryTableViewCell.self) { [unowned self] _, model, indexPath in
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ExcenseScreenViewConroller") as! ExcenseScreenViewConroller
+            vc.nameCategory = model.name
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
     private func configureTableView() {

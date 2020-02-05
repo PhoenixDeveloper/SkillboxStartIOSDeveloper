@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0ECA698405B87A0BD2FD12D9 /* Pods_DiplomProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5F7B1A9BB503CCC596D78F /* Pods_DiplomProject.framework */; };
+		3309EBD023EB0012009C51E3 /* ExcenseScreenViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309EBCF23EB0012009C51E3 /* ExcenseScreenViewConroller.swift */; };
 		330E009823EAD39600664CA2 /* MainScreenViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */; };
+		3310221323EB056800541354 /* ExcenseScreenViewConroller + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310221223EB056800541354 /* ExcenseScreenViewConroller + Alerts.swift */; };
 		3342A96323EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */; };
 		3342A96523EAF796004D3C0C /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */; };
 		33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACA5D123EAB3E4003689D6 /* Persistence.swift */; };
@@ -27,7 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3309EBCF23EB0012009C51E3 /* ExcenseScreenViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcenseScreenViewConroller.swift; sourceTree = "<group>"; };
 		330E009723EAD39600664CA2 /* MainScreenViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenViewController+Alert.swift"; sourceTree = "<group>"; };
+		3310221223EB056800541354 /* ExcenseScreenViewConroller + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExcenseScreenViewConroller + Alerts.swift"; sourceTree = "<group>"; };
 		3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartExpenseIncomeViewController.swift; sourceTree = "<group>"; };
 		3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		33ACA5D123EAB3E4003689D6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3309EBCE23EAFFE0009C51E3 /* ExcenseScreenViewConroller */ = {
+			isa = PBXGroup;
+			children = (
+				3309EBCF23EB0012009C51E3 /* ExcenseScreenViewConroller.swift */,
+				3310221223EB056800541354 /* ExcenseScreenViewConroller + Alerts.swift */,
+			);
+			path = ExcenseScreenViewConroller;
+			sourceTree = "<group>";
+		};
 		330E009623EAD36900664CA2 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				3342A96223EAEC8E004D3C0C /* ChartExpenseIncomeViewController.swift */,
-				3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */,
 			);
 			path = ChartExpenseIncome;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 		33AE031623EAB0E00063D96F /* DiplomProject */ = {
 			isa = PBXGroup;
 			children = (
+				3309EBCE23EAFFE0009C51E3 /* ExcenseScreenViewConroller */,
 				3342A96123EAEC43004D3C0C /* ChartExpenseIncome */,
 				330E009623EAD36900664CA2 /* MainScreen */,
 				33ACA5E423EACBE4003689D6 /* CustomView */,
@@ -140,6 +153,7 @@
 				33AE032523EAB0E90063D96F /* Info.plist */,
 				33ACA5D123EAB3E4003689D6 /* Persistence.swift */,
 				33ACA5E023EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift */,
+				3342A96423EAF796004D3C0C /* TransactionTableViewCell.swift */,
 			);
 			path = DiplomProject;
 			sourceTree = "<group>";
@@ -282,10 +296,12 @@
 				33ACA5D223EAB3E5003689D6 /* Persistence.swift in Sources */,
 				33AE031823EAB0E00063D96F /* AppDelegate.swift in Sources */,
 				33ACA5E123EAC32E003689D6 /* ExcensesCategoryTableViewCell.swift in Sources */,
+				3309EBD023EB0012009C51E3 /* ExcenseScreenViewConroller.swift in Sources */,
 				3342A96523EAF796004D3C0C /* TransactionTableViewCell.swift in Sources */,
 				33AE031A23EAB0E00063D96F /* SceneDelegate.swift in Sources */,
 				33ACA5E623EACC08003689D6 /* DefaultButton.swift in Sources */,
 				33ACA5DB23EABBBD003689D6 /* Income.swift in Sources */,
+				3310221323EB056800541354 /* ExcenseScreenViewConroller + Alerts.swift in Sources */,
 				33ACA5DF23EABCC3003689D6 /* ExpenseCategory.swift in Sources */,
 				33ACA5D423EAB99D003689D6 /* Transaction.swift in Sources */,
 				33ACA5E323EAC512003689D6 /* MainScreenViewController.swift in Sources */,

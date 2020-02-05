@@ -32,15 +32,18 @@ class Persistence {
         }
     }
 
-    func addExpense(expense: Expense) {
+    func addExpenseInCategory(expense: Expense, nameCategory: String) {
+        guard let category = realm.objects(ExpenseCategory.self).filter({ $0.name == nameCategory }).first else { fatalError("not found category") }
         try! realm.write {
+            expense.category = category
             realm.add(expense)
             expenses.append(expense)
+            category.expensesList.append(expense)
         }
     }
 
     func getBalance() -> Float {
-        return incomes.reduce(0, { $0 + $1.value }) + expenses.reduce(0, { $0 + $1.value })
+        return incomes.reduce(0, { $0 + $1.value }) - expenses.reduce(0, { $0 + $1.value })
     }
 
     func getCategories() -> [ExpenseCategory] {
@@ -51,5 +54,10 @@ class Persistence {
         return (incomes + expenses)
             .sorted(by: { $0.date > $1.date })
             .filter({ $0.date >= date })
+    }
+
+    func getExpensesFromCategory(nameCategory: String) -> [Expense] {
+        guard let category = realm.objects(ExpenseCategory.self).filter({ $0.name == nameCategory }).first else { fatalError("not found category") }
+        return Array(category.expensesList)
     }
 }

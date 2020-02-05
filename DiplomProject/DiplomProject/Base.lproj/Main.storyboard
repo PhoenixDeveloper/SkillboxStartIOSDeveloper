@@ -143,6 +143,36 @@
             </objects>
             <point key="canvasLocation" x="1882" y="134"/>
         </scene>
+        <!--Excense Screen View Conroller-->
+        <scene sceneID="Hxo-25-i4k">
+            <objects>
+                <viewController storyboardIdentifier="ExcenseScreenViewConroller" id="FiR-pk-ZHz" customClass="ExcenseScreenViewConroller" customModule="DiplomProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UxR-L4-el3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCL-Hf-0Jc">
+                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BQM-WK-R80" firstAttribute="bottom" secondItem="cCL-Hf-0Jc" secondAttribute="bottom" constant="16" id="1eD-2v-XPe"/>
+                            <constraint firstItem="BQM-WK-R80" firstAttribute="trailing" secondItem="cCL-Hf-0Jc" secondAttribute="trailing" constant="16" id="FXl-gW-I3N"/>
+                            <constraint firstItem="cCL-Hf-0Jc" firstAttribute="leading" secondItem="BQM-WK-R80" secondAttribute="leading" constant="16" id="RuE-JW-Akn"/>
+                            <constraint firstItem="cCL-Hf-0Jc" firstAttribute="top" secondItem="BQM-WK-R80" secondAttribute="top" constant="16" id="XO0-sq-wff"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BQM-WK-R80"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cCL-Hf-0Jc" id="hn4-mD-YuQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zy-0p-Wmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848" y="136"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bsB-5d-B0n">
             <objects>

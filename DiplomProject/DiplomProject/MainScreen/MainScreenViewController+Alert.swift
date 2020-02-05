@@ -65,7 +65,7 @@ extension MainScreenViewController {
         }
 
         textField.rx.text.subscribe(onNext: { text in
-            if let text = text, let _ = Float(text), !text.isEmpty {
+            if let text = text, let value = Float(text), !text.isEmpty && value > 0 {
                 saveAction.isEnabled = true
             }
             else {
