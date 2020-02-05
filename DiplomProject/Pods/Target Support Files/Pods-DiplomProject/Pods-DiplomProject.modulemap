@@ -1,0 +1,6 @@
+framework module Pods_DiplomProject {
+  umbrella header "Pods-DiplomProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
